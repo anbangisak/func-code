@@ -36,4 +36,7 @@ func main() {
 			fmt.Println("ch2: ", val2)
 		}
 	}
+
+	close(ch1)
+	close(ch2)
 }
