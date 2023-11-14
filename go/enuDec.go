@@ -13,5 +13,9 @@ const (
 )
 
 func main() {
+	valList := []int32{10, 20, 30, 20, 50, 30, 10}
+	fmt.Println(valList)
 	fmt.Println(enu, enu1, enu2)
 }
+
+var x float32

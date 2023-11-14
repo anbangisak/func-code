@@ -1,6 +1,24 @@
 package main
 
 import (
+    "fmt"
+    //"runtime"
+    "os"
+    "time"
+)
+
+func say(s string) {
+  fmt.Fprintf(os.Stdout, s)
+}
+
+func main() {
+    go say("world")
+    say("hello")
+    time.Sleep(5)
+}
+
+/*
+import (
 	"fmt"
 )
 
@@ -23,6 +41,7 @@ func main() {
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
 }
+*/
 
 /*
 package main

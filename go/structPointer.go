@@ -26,6 +26,9 @@ func main() {
 	f1 := Fish{11, 28}
 	f2 := &Fish{12, 68}
 
+	val := []string{}
+	val1 := make(map[string]int)
+
 	valueReceiver(f1)
 	fmt.Println("Outside valueRec: ", f1.Net)
 	pointerReceiver(f2)
